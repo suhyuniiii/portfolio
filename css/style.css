@@ -1,0 +1,140 @@
+
+#header {position:fixed; top:0; left:0; width:100%; height:50px;
+        padding:0 20px; z-index:3; 
+        text-align:center;}
+#header.on {background-image:url(../img/flower.jpg); background-position: center; background-repeat: no-repeat;
+            background-size: cover;}
+
+
+#header .center {height:100%; position:relative;}
+#header .gnb { 
+            display:flex; justify-content: right; align-items:center;}
+#header .gnb li {margin:0 20px; line-height:50px;}
+#header .gnb li a {color:#fff; font-size:18px;}
+
+
+#main {height:100vh; overflow:hidden; background-image: url(../img/flower.jpg);
+        background-position:center; background-repeat: no-repeat; background-size: cover;}
+#main .center {width:80%; margin:0 auto; height:100%; position:relative;}
+#main .mainText {position:absolute; top:50%; left:50%;
+                transform:translate(-50%,-50%); text-align:center; z-index:4;}
+
+
+/* #main .mainText .barwidth {width:0; height:2px; background-color:#fff; position:relative; left:-5px;
+        animation-name:long; animation-iteration-count: infinite; animation-duration: 3s;} */
+/* #main .mainText .barwidth2 {width:2px; height:205px; background-color:#fff;
+    position:relative; top:200px; left:5px; 
+    } */
+
+
+             
+#main .mainText h3 {color:#fff; font-size:60px; font-weight:normal;
+                    margin:20px 0; padding:0 10px; text-indent:20px;}
+
+
+
+
+
+
+
+
+#about {padding:120px 0;}
+#about .center {width:72%; margin:0 auto; display:flex; justify-content: space-between;}
+
+#about .profile,#about .license,#about .skill {position:relative; width:31.333333%; margin:0 1%;}
+
+#about .center .topText h3:before {content:""; display:inline-block; width:3px; height:23px;
+        background-color: #d8b102; margin-right:10px;}
+#about .center .topText h3 {color:#343438; font-size:21px; font-weight:normal; display:flex;align-items:center;
+margin-bottom:40px;}
+
+#about .center .content h4 {color:#343438; font-weight:normal; font-family: 'KoPubDotumMedium';
+    font-size:15px;}
+
+#about .profile .content {display:flex; margin-bottom:20px;}
+#about .profile .content h4:nth-child(1) {margin-right:10px; width:30%;}
+
+#about .license {margin-right:20px;}
+#about .license .content {margin-bottom:20px;}
+
+#about .skill .content h4 {margin-bottom:20px;}
+
+#portfolio {background-color:#f5f1f1; padding:120px 0;}
+#portfolio .pf_wrap {width:80%; margin:0 auto;}
+
+
+#portfolio .topText h4:before {content:""; display:inline-block; width:3px; height:23px;
+    background-color: #d8b102; margin-right:10px;}
+#portfolio .topText h4 {color:#343438; font-size:21px; font-weight:normal; display:flex;align-items:center;
+    margin-bottom:70px;}
+
+    #portfolio .pf_con {margin-bottom:80px;}
+
+#portfolio .pf_con .left {margin-bottom:40px; display:flex; align-items:center;}
+#portfolio .pf_con .left .web {width:78%; margin-right:2%;}
+#portfolio .pf_con .left .web img {width:100%; height:100%;}
+#portfolio .pf_con .left .mobile {width:20%;}
+#portfolio .pf_con .left .mobile img {width:100%; height:100%;}
+
+#portfolio .pf_con .title {position:relative;}
+#portfolio .pf_con .title h4 {color:#56413d; text-align: center; font-weight:normal; font-size:22px; margin-bottom:30px; font-family: 'KoPubDotumMedium';}
+#portfolio .pf_con .title h4 span {font-size:40px; margin-right:10px; color:#d8b102;}
+
+#portfolio .pf_con .title .detail {display:flex; justify-content:center;}
+#portfolio .pf_con .title .detail > div {display:flex; margin:0 20px; margin-bottom:30px;}
+#portfolio .pf_con .title .detail > div h5 {font-family: 'KoPubDotumMedium'; font-weight:normal; color:#666668; 
+    font-size:15px; margin-right:10px;}
+
+
+#portfolio .pf_con .more {width:120px; height:40px; position:absolute; top:20px; right:150px;
+    background-color: #56413d; border-radius:30px; margin:0 auto; transition:all 0.5s;}
+#portfolio .pf_con .more:hover {background-color:#9b7a74;}
+#portfolio .pf_con .more a {display:block; color:#fff; font-size:15px; line-height:40px; text-align:center; font-family: 'KoPubDotumMedium';}
+
+
+#portfolio .pf_con .more2 {background-color:#f6831d ;}
+#portfolio .pf_con .more2:hover {background-color:#50331a ;}
+#portfolio .pf_con .more3 {background-color:#fe1ba2 ;}
+#portfolio .pf_con .more3:hover {background-color:#222 ;}
+
+#contact {padding:50px 0;}
+#contact .center {width:72%; margin:0 auto;}
+
+#contact .topText h4:before {content:""; display:inline-block; width:3px; height:23px;
+    background-color: #d8b102; margin-right:10px;}
+
+#contact .topText h4 {color:#343438; font-weight:normal;
+    font-size:21px; display:flex;align-items:center; justify-content: center;}
+
+#contact .botText {margin-top:20px;}
+#contact .botText> div {display:flex; justify-content:center;
+align-items:center;}
+
+#contact .botText .phone {margin-bottom:10px;}
+
+#contact .botText> div i {font-size:25px; color:#343438;
+margin-right:10px;}
+
+#contact .botText > div h5 {font-size:18px; font-weight:normal;
+color:#343438;}
+
+
+
+
+@media (max-width:1200px) 
+{
+    #about .center {width:80%;}
+
+    #portfolio .pf_con .title .detail {flex-wrap:wrap;}
+    #portfolio .pf_con .title .detail > div {width:100%; justify-content:center; margin-bottom:14px;}  
+    #portfolio .pf_con .title .detail > div h5 {margin-right:0; margin:5px;}
+    
+}
+
+@media (max-width:1040px) 
+{
+    #about .center {flex-wrap:wrap; justify-content:center;}
+
+    #about .profile,#about .license,#about .skill {width:100%; margin:0%; margin-bottom:20px;}
+    #about .profile .content h4:nth-child(1) {width:20%;}
+}
