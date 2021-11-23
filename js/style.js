@@ -1,3 +1,5 @@
+AOS.init(); //aos 시작구문
+
 const header = document.querySelector("#header");
 const section2 = document.querySelector("#about");
 
